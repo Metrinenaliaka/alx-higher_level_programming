@@ -5,4 +5,3 @@ if __name__ == "__main__":
     for i in result:
         if i[:2] != "__":
             print(i)
-
