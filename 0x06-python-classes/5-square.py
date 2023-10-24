@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+""" creates a square and determines area and prints"""
 
 
 class Square:
