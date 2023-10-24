@@ -22,4 +22,4 @@ class Square:
         """determines area"""
 
         res = self.__size * self.__size
-        return(res)
+        return res
