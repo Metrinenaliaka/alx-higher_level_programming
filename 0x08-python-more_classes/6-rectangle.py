@@ -65,7 +65,7 @@ class Rectangle:
         return '\n'.join(hashes for i in range(self.height))
 
     def __repr__(self):
-        """returns a string a the rectangle"""
+        """prints rectangle"""
         eval('Rectangle(self.width, self.height)')
         return(f"Rectangle({self.width}, {self.height})")
 
