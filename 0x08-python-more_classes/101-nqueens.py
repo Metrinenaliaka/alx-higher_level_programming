@@ -5,6 +5,11 @@ import sys
 
 
 def nQueens(n):
+    """
+    nqueen function
+    Args:
+        n: int
+    """
 
     queens = [0] * n
     print(queens)
