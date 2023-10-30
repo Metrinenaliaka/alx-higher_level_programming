@@ -60,9 +60,9 @@ class Rectangle:
         if self.height == 0 or self.width == 0:
             return ''
         hashes = '#' * self.width
-        return '\n'.join(hashes for i in range(self.height))
+        return ('\n'.join(hashes for i in range(self.height)))
 
     def __repr__(self):
         """returns a string a the rectangle"""
-        eval ('Rectangle(self.width, self.height)')
-        return("Rectangle({}, {})".format(self.width, self.height))
+        eval('Rectangle(self.width, self.height)')
+        return ("Rectangle({}, {})".format(self.width, self.height))
