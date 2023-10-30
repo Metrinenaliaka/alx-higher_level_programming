@@ -30,6 +30,13 @@ def nQueens(n):
         n = 0
 
     def valid(queens, n):
+        """
+        checks if quenns are valid
+        Args:
+            queens
+            n
+        """
+
         i = n + 1
         while i < s:
             if (queens[i] == queens[n]):
