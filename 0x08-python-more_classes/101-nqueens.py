@@ -3,6 +3,7 @@
 
 import sys
 
+
 def nQueens(n):
 
     queens = [0] * n
@@ -11,8 +12,8 @@ def nQueens(n):
 
     while True:
         while(n > 1):
-            if valid(queens, n) == True:
-                n = n -1
+            if valid(queens, n) is True:
+                n = n - 1
             else:
                 queens[n] += 1
                 if queens[n] >= s:
@@ -35,7 +36,7 @@ def nQueens(n):
                 return False
             i + 1
             x + 1
-        i = n +1
+        i = n + 1
         while i < s:
             x = 1
             if queens[i] == (queens[n] + x):
