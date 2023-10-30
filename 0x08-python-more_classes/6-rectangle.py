@@ -80,13 +80,14 @@ class Rectangle:
         if self.height == 0 or self.width == 0:
             return ''
         hashes = '#' * self.width
-        return ('\n'.join(hashes for i in range(self.height))
+        return ('\n'.join(hashes for i in range(self.height)))
 
     def __repr__(self):
         """
         prints rectangle
         """
-        return(f"Rectangle({self.width}, {self.height})")
+        eval('Rectangle(self.width, self.height)')
+        return (f"Rectangle({self.width}, {self.height})")
 
     def __del__(self):
         """
