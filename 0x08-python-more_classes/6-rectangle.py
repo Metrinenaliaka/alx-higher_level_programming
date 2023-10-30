@@ -86,7 +86,6 @@ class Rectangle:
         """
         prints rectangle
         """
-        eval('Rectangle(self.width, self.height)')
         return(f"Rectangle({self.width}, {self.height})")
 
     def __del__(self):
