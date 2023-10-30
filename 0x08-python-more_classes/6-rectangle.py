@@ -67,7 +67,7 @@ class Rectangle:
     def __repr__(self):
         """returns a string a the rectangle"""
         eval('Rectangle(self.width, self.height)')
-        return("Rectangle({}, {})".format(self.width, self.height))
+        return(f"Rectangle({self.width}, {self.height})")
 
     def __del__(self):
         """instance del"""
