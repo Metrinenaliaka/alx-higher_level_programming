@@ -3,12 +3,13 @@
 Defines A Rectangle with height and width
 Args:
     height: int/float
-    width: in/float
+    width: int/float
 """
 
 
 class Rectangle:
     """class with private atrributes"""
+
     def __init__(self, width=0, height=0):
         """defining width and height"""
         self.width = width
@@ -49,7 +50,7 @@ class Rectangle:
         return self.width * self.height
 
     def perimeter(self):
-        """returns paramete"""
+        """returns parameter"""
         if self.width == 0 or self.height == 0:
             return 0
         return (self.width * 2) + (self.height * 2)
