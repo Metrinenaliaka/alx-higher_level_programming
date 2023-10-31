@@ -1,9 +1,13 @@
 #!/usr/bin/python3
-"""locked class"""
+"""
+locked class
+"""
 
 
 class LockedClass:
-    """locked class to test only setting first_name"""
+    """
+    locked class to test only setting first_name
+    """
 
 
     __slots__ = 'first_name'
