@@ -1,4 +1,22 @@
 >>> add_integer = __import__('0-add_integer').add_integer
+
+Addition of two -ve floats
+>>> add_integer(-2.4, -2.4)
+-4
+
+Addition of a single -ve int
+>>> add_integer(-3)
+95
+
+Addition of a single -ve float
+>>> add_integer(-3.5)
+95
+
+Addition of -ve int and string
+>>> add_integer(-4, "school")
+Traceback (most recent call last):
+...
+TypeError: b must be an integer
 >>> add_integer(1, 5)
 6
 >>> add_integer(-1, 5)
