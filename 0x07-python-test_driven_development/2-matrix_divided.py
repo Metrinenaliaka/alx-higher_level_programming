@@ -1,25 +1,32 @@
 #!/usr/bin/python3
-"""
-A function that divides elemnts of a matrix
-args:
-    matrix: list of lists of type int
-    div: int
-"""
 
 
 def matrix_divided(matrix, div):
-    n_matrix = []
+    """divides contents of matrix by div
+    Args:
+        matrix: matrix of elements
+        div: divisor
+    """
+
+    message = 'matrix must be a matrix (list of lists) of integers/fl\
+oats'
+    if all(isinstance(row, list) for row in matrix) is False:
+        raise TypeError(message)
+    if all(isinstance(e, (int, float)) for r in matrix for e in r) is False:
+        raise TypeError(message)
+
+    x = len(matrix[0])
+    if x == 0:
+        raise TypeError(message)
     for row in matrix:
-        for column in row:
-            if not isinstance(column, (int, float)):
-                raise TypeError("matrix must be a matrix (list of lists) of integers/floats")
-    row1 = matrix[0]
-    for rows in matrix[1:]:
-        if rows != row1:
-            raise TypeError("Each row of the matrix must have the same size")
+        if len(row) is not x:
+            raise TypeError('Each row of the matrix must have the same size')
     if not isinstance(div, (int, float)):
-        raise TypeError("div must be a number")
-    if div == 0:
-        raise ZeroDivisionError("division by zero")
-    n_matrix = [[round(element / div, 2) for element in row] for row in matrix]
-    return n_matrix
+        raise TypeError('div must be a number')
+    if div is 0:
+        raise ZeroDivisionError('division by zero')
+    else:
+        new_matrix = [[round(elem / div, 2) for elem in row]
+                      for row in matrix]
+
+    return(new_matrix)

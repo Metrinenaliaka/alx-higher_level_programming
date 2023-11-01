@@ -1,0 +1,37 @@
+>>> print_square = __import__('4-print_square').print_square
+>>> print_square(0)
+>>> print_square(-1)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "/root/alx-higher_level_programming/0x07-python-test_driven_development/4-print_square.py", line 13, in print_square
+    raise ValueError("size must be >= 0")
+ValueError: size must be >= 0
+>>> print_square(0.98)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "/root/alx-higher_level_programming/0x07-python-test_driven_development/4-print_square.py", line 11, in print_square
+    raise TypeError("size must be an integer")
+TypeError: size must be an integer
+>>> print_square(4)
+####
+####
+####
+####
+>>> print_square(10)
+##########
+##########
+##########
+##########
+##########
+##########
+##########
+##########
+##########
+##########
+
+>>> print_square('a')
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "/root/alx-higher_level_programming/0x07-python-test_driven_development/4-print_square.py", line 11, in print_square
+    raise TypeError("size must be an integer")
+TypeError: size must be an integer
