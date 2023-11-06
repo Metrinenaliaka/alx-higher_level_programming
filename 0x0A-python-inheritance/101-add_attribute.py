@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """inheritance"""
 
+
 def add_attribute(obj, attr, value):
     """add attribute if possible
     Args
