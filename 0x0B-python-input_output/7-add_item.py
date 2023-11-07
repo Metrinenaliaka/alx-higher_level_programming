@@ -13,7 +13,7 @@ num = len(sys.argv)
 
 try:
     data = load_from_json_file('add_item.json')
-except Alist:
+except FileNotFoundError:
     data = []
 
 for i in range(1, num):
