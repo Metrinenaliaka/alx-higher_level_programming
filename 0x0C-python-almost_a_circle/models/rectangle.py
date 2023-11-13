@@ -51,7 +51,7 @@ class Rectangle(Base):
         """gets x"""
         return self.__x
 
-    @width.setter
+    @x.setter
     def x(self, value):
         """gets x"""
         if type(value) is not int:
@@ -65,7 +65,7 @@ class Rectangle(Base):
         """gets y"""
         return self.__y
 
-    @width.setter
+    @y.setter
     def y(self, value):
         """gets y"""
         if type(value) is not int:
@@ -89,8 +89,8 @@ class Rectangle(Base):
 
     def __str__(self):
         """string rep"""
-        return ('[Rectangle] ({:d}) {:d}/{:d} - {:d}/{:d}'.
-                format(self.id, self.__x, self.__y, self.__width, self.__height))
+        return f"[Rectangle] ({self.id}) {self.x}/{self.y} -\
+                {self.width}/{self.height}"
 
     def update(self, *args, **kwargs):
         """assigns args to atts"""

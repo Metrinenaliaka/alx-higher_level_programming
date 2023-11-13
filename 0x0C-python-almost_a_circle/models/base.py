@@ -4,6 +4,8 @@
 
 import json
 import csv
+
+
 class Base:
     """
     Base class that manages id
@@ -78,8 +80,8 @@ class Base:
         filename = '{}.json'.format(cls.__name__)
         try:
             with open(filename, 'r') as f:
-                    my_list = cls.from_json_string(f.read())
-            return([cls.create(**x) for x in my_list])
+                my_list = cls.from_json_string(f.read())
+            return ([cls.create(**x) for x in my_list])
         except FileNotFoundError:
             return ([])
 
