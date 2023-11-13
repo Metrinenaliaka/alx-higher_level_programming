@@ -26,7 +26,8 @@ class Square(Rectangle):
 
     @size.setter
     def size(self, value):
-        """set size
+        """
+        set size
         Args
            value - size to set to
         """
@@ -51,4 +52,4 @@ class Square(Rectangle):
 
         for k in keys:
             my_dic[k] = getattr(self, k)
-        return (my_dic)
+        return my_dic

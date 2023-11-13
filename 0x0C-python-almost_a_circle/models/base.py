@@ -28,7 +28,7 @@ class Base:
         if not list_dictionaries:
             return ('[]')
         else:
-            return (json.dumps(list_dictionaries))
+            return json.dumps(list_dictionaries)
 
     @classmethod
     def save_to_file(cls, list_objs):
@@ -50,11 +50,12 @@ class Base:
 
     @staticmethod
     def from_json_string(json_string):
-        """returns a list of the json string representation
+        """
+        returns a list of the json string representation
         Args
            json_string - represents a list of dictionaries
         """
-        return (json.loads(json_string or '[]'))
+        return json.loads(json_string or '[]')
 
     @classmethod
     def create(cls, **dictionary):
