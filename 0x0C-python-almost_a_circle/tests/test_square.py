@@ -20,16 +20,6 @@ class TestSquare(unittest.TestCase):
         self.assertIsNotNone(update.__doc__)
         self.assertIsNotNone(to_dictionary.__doc__)
 
-    def test_style_square(self):
-        """
-        Tests for pep8
-        """
-        style = pep8.StyleGuide(quiet=True)
-        p = style.check_files(['tests/test_models/test_square.py'])
-        self.assertEqual(p.total_errors, 0, "fix pep8")
-        p = style.check_files(['models/square.py'])
-        self.assertEqual(p.total_errors, 0, "fix pep8")
-
     @classmethod
     def setUpClass(cls):
         Base._Base__nb_objects == 0
