@@ -36,5 +36,11 @@ class TestMaxInteger(unittest.TestCase):
         """tests negative"""
         self.assertEqual(max_integer([-1, -2, -3]), -1)
 
+    def test_one_element(self):
+        """
+        tests for one element in list
+        """
+        self.assertEqual(max_integer([1]), 1)
+
 if __name__ == "__main__":
     unittest.main()
