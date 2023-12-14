@@ -1,2 +1,2 @@
 -- creates a table force_name
-CREATE TABLE IF NOT EXISTS force_name(id INT NOT NULL, name VARCHAR(256));
+CREATE table IF NOT EXISTS id_not_null(id INT NOT NULL DEFAULT 1, name VARCHAR(256));
