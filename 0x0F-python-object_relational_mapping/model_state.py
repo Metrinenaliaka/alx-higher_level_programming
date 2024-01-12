@@ -14,4 +14,5 @@ class State(Base):
     name = Column(String(128), nullable=False)
 
     def __repr__(self):
+        """repr function"""
         return("<States(id='%s', name='%s')>" % (self.id, self.name))
