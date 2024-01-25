@@ -9,7 +9,7 @@ def find_peak(list_of_integers):
 
     end = len(list_of_integers) - 1
     # seaches from index zero to end
-    return(peak(list_of_integers, 0, end))
+    return (peak(list_of_integers, 0, end))
 
 
 def peak(list_int, low, high):
@@ -17,10 +17,10 @@ def peak(list_int, low, high):
 
     # checks if only 1 variable given
     if low == high:
-        return(list_int[high])
+        return (list_int[high])
     mid = (high + low) // 2
     # checks if first half has the peak
     if list_int[mid] > list_int[mid + 1]:
-        return(peak(list_int, low, mid))
+        return (peak(list_int, low, mid))
     # if the peak is likely on the right half
-    return(peak(list_int, mid + 1, high))
+    return (peak(list_int, mid + 1, high))
