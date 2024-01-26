@@ -10,7 +10,7 @@ if __name__ == "__main__":
 
     try:
         rep = sys.argv[1]
-    except:
+    except IndexError:
         rep = ""
 
     data = {'q': rep}
@@ -26,5 +26,5 @@ if __name__ == "__main__":
             print("No result")
         else:
             print("[{}] {}".format(id, name))
-    except:
+    except ValueError:
         print("Not a valid JSON")
